@@ -1,0 +1,33 @@
+{
+  "name": "backend-boilerplate",
+  "version": "1.0.0",
+  "description": "node backend boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "env NODE_ENV=development nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maxyee/node-backend-boilerplate.git"
+  },
+  "author": "julhas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maxyee/node-backend-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Maxyee/node-backend-boilerplate#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "sequelize-cli": "^6.2.0"
+  }
+}
