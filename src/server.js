@@ -5,6 +5,7 @@ import helmet from 'helmet';
 import fs from 'fs';
 import path from 'path';
 import routes from './routes';
+import { isAuthenticated } from './utils/isAuthenticated';
 
 
 const app = express();
@@ -16,6 +17,9 @@ app.use(express.urlencoded({extended: true, limit:'50mb'}));
 
 // user module
 app.use("/user", routes.user);
+
+// product module
+app.use("/product", isAuthenticated, routes.product);
 
 
 app.use((req, res) => {
